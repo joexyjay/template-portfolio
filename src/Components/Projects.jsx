@@ -5,20 +5,36 @@ import "../styles/Projects.css";
 const Projects = () => {
   const projectsInfo = [
     {
-      name: "Project 1",
-      desc: "congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed",
-      liveLink: "website url",
+      name: "ADIRE",
+      desc: "I collaborated with a dedicated team on the development of 'ADIRE,' an innovative assistant for tailors. It simplifies customer data management, materials tracking, and payment processing, addressing the challenges of manual and disorganized operations in the tailoring industry.",
+      liveLink: "https://adire1.vercel.app",
       githubLink: "https://github.com/",
-      techs: ["HTML", "CSS", "TypeScript"],
-      isOpenSource: true,
+      techs: ["Node", "React", "Chart.JS", "TypeScript", "MongoDB", "Axios", "ExpressJS"],
+      isOpenSource: false,
     },
     {
-      name: "Project 2",
-      desc: "congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed",
-      liveLink: "website url",
-      githubLink: "https://github.com/",
-      techs: ["React", "Node", "MongoDB", "Socket.io", "Redux"],
-      isOpenSource: true,
+      name: "FullStack Authentication",
+      desc: "Developed a secure full-stack authentication application using React, Redux, and MongoDb, featuring user authentication, efficient state management, robust profile pages, dynamic user profile management, and CRUD operations.",
+      liveLink: "https://mern-app-7syc.onrender.com/",
+      githubLink: "https://github.com/joexyjay/mern-app.git",
+      techs: ["React", "Node", "MongoDB", "Firebase", "Redux Toolkit", "Tailwind", "TypeScript"],
+      isOpenSource: false,
+    },
+    {
+      name: "Monie-Paddy",
+      desc: "I collaborated with a dedicated team on the development of Monie-Paddy which is a personal finance management app that allows users to send and receive money and pay bills within the app.",
+      liveLink: "https://monie-paddy.vercel.app/",
+      githubLink: "https://github.com/joexyjay/Monie-Paddy.git",
+      techs: ["React", "Node", "MongoDB", "CI/CD", "Bootstrap", "TypeScript"],
+      isOpenSource: false,
+    },
+    {
+      name: "Hospital Database Management",
+      desc: "Designed and developed a database management system for a hospital. Developed modules handling doctors and patients records. Ensure data integrity, security and optimal performance.",
+      liveLink: "",
+      githubLink: "https://github.com/joexyjay/Monie-Paddy.git",
+      techs: ["Express", "TypeScript", "Node", "MongoDB", "EJS", "Bootstrap"],
+      isOpenSource: false,
     },
   ];
   return (
