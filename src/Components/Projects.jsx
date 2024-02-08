@@ -33,7 +33,7 @@ const Projects = () => {
       desc: "Designed and developed a database management system for a hospital. Developed modules handling doctors and patients records. Ensure data integrity, security and optimal performance.",
       liveLink: "",
       githubLink: "https://github.com/joexyjay/Monie-Paddy.git",
-      techs: ["Express", "TypeScript", "Node", "MongoDB", "EJS", "Bootstrap"],
+      techs: ["Express", "TypeScript", "Node", "MongoDB", "EJS", "Bootstrap", "GraphQl"],
       isOpenSource: false,
     },
   ];
