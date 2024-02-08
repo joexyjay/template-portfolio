@@ -4,7 +4,7 @@ import '../styles/Home.css'
 
 import TypeWriterEffect from 'react-typewriter-effect';
 import { animateScroll } from 'react-scroll';
-import { saveAs } from "file-saver";
+// import { saveAs } from "file-saver";
 import { Link } from 'react-scroll';
 
 const Home = () => {
@@ -12,12 +12,20 @@ const Home = () => {
   const arrayOfWords = ['Tap again', 'Helllo', 'You found this', 'I added this...', 'because it seemed cool', `so here's something`, 'did you know that...', `You can't breathe and talk.`, 'the earth is 71% water.', `It snows in the Sahara Desert
 `,]
   const textContent = useRef();
-  const handleDownload = () => {
-    saveAs(
-      "google drive url",
-      "Resume.pdf"
-    )
+  // const handleDownload = () => {
+  //   saveAs(
+  //     "https://drive.google.com/file/d/1iYy4N-uPeaCt9XEnE6-XBEj1wiYOd_vf/uc?export=download",
+  //     "JoeResume.pdf"
+  //   )
+  // }
+
+  const handleView = () => {
+    window.open(
+      "https://drive.google.com/file/d/1iYy4N-uPeaCt9XEnE6-XBEj1wiYOd_vf/view?usp=sharing",
+      "_blank"
+    );
   }
+  
 
   const handleChange = () => {
     textContent.current.style.display = 'inline-block';
@@ -67,7 +75,7 @@ const Home = () => {
             Hire Me
           </Link>
 
-          <div onClick={handleDownload} className='btn2'>View Resume</div>
+          <div onClick={handleView} className='btn2'>View Resume</div>
         </div>
       </div>
 
