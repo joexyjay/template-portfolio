@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { AiFillInstagram, AiFillGithub, AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai'
+import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai'
 
 import '../styles/Socials.css';
 
@@ -9,11 +9,11 @@ const Socials = () => {
     <div className='socials'>
       <h2>Find Me @ The Web</h2>
       <div className="social">
-        <div className='insta'>
+        {/* <div className='insta'>
           <AiFillInstagram />
           <p>Instagram</p>
           <a href="https://instagram.com" target='_blank' rel='noreferrer'>Let's Connect</a>
-        </div>
+        </div> */}
         <div className='git'>
           <AiFillGithub />
           <p>Github</p>
