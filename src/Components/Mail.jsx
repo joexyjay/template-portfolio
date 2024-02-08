@@ -28,9 +28,9 @@ const Mail = () => {
       valid.email = false;
     }
 
-    if (name !== '' && subject !== '' && message.length > 100) {
+    if (name !== '' && subject !== '' && message.length > 10) {
       valid.rest = true;
-      console.log('here')
+      console.log('sent')
     } else {
       valid.rest = false;
     }
@@ -53,14 +53,14 @@ const Mail = () => {
     } else {
       // Using email.js to send emails https://www.emailjs.com/docs/sdk/installation/
       // use .env to store ids and keys from email.js
-      // emailjs.send(serviceID, templateID, toSend, publicKey)
-      //   .then((response) => {
-      //     formResMsg.current.innerText = "Message sent..."
-      //     reset();
-      //   }, (err) => {
-      //     formResMsg.current.innerText = "Failed... " + err.text
-      // });
-      // error.current.style.display = 'none'
+      emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, toSend, process.env.REACT_APP_PUBLIC_KEY)
+        .then((response) => {
+          formResMsg.current.innerText = "Message sent..."
+          reset();
+        }, (err) => {
+          formResMsg.current.innerText = "Failed... " + err.text
+      });
+      error.current.style.display = 'none'
     }
   }
 
